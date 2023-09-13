@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 export const useLogin = () => {
     const [error, setError] = useState(null)
@@ -10,7 +11,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('/api/user/login', {
+        const response = await fetch(baseURL + '/api/user/login', {
             method: "POST",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify({username, password})

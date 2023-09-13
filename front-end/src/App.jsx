@@ -8,6 +8,7 @@ import Login from './components/navbarComponents/Login';
 import Register from './components/navbarComponents/Register';
 import Navbar from './components/Navbar';
 import { useAuthContext } from './hooks/useAuthContext';
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 const App = () => {
   const [courses, setCourses] = useState(null);
@@ -16,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('/api/courses');
+        const response = await fetch(baseURL + '/api/courses');
         console.log(response)
         const json = await response.json();
         

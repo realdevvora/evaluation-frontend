@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useReviewContext } from "../../hooks/useReviewContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 const ReviewForm = (props) => {
     const { dispatch } = useReviewContext()
@@ -33,7 +34,7 @@ const ReviewForm = (props) => {
         
         const review = {title, author: user.username, message, program: user.program, rating, difficulty, courseTitle}
 
-        const response = await fetch('/api/reviews', {
+        const response = await fetch(baseURL + '/api/reviews', {
             method: "POST",
             body: JSON.stringify(review),
             headers: {

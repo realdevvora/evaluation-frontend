@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useReviewContext } from "../../hooks/useReviewContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 const ReviewSection = (props) => {
     const {course} = props
@@ -10,7 +11,7 @@ const ReviewSection = (props) => {
     useEffect(() => {
         // sending
         const fetchReviews = async () => {
-            const response = await fetch("/api/reviews")
+            const response = await fetch(baseURL + "/api/reviews")
             const json = await response.json()
 
             
@@ -49,7 +50,7 @@ const ReviewSection = (props) => {
                     </div>
                     <span onClick={async () => {
 
-                        const response = await fetch("/api/reviews/" + review._id, {
+                        const response = await fetch(baseURL + "/api/reviews/" + review._id, {
                             method: "DELETE"
                         })
                         const json = await response.json()

@@ -5,6 +5,7 @@ import ReviewSection from './algorithmComponents/ReviewSection'
 import DifficultyBarChart from "./algorithmComponents/DifficultyBarChart"
 import RatingBarChart from "./algorithmComponents/RatingBarChart"
 import { useEffect } from 'react'
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 
 export default function CoursePage(props) {
@@ -71,7 +72,7 @@ export default function CoursePage(props) {
 
       const fetchCourses = async () => {
 
-        const response = await fetch('/api/reviews', {
+        const response = await fetch(baseURL + '/api/reviews', {
             method: "GET",
             headers: {
                 'Content-Type': "application/json",

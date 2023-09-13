@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
+const baseURL = "https://course-evaluations-api.onrender.com"
 
 const Home = () => {
     const [courses, setCourses] = useState(null)
 
     useEffect(() => {
         const fetchCourses = async () => {
-            const response = await fetch("/api/courses")
+            const response = await fetch(baseURL + "/api/courses")
             const json = await response.json()
 
             if (response.ok) {

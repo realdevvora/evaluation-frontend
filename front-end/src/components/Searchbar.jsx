@@ -1,6 +1,8 @@
 import React, { useState, useEffect} from 'react'
 import {useNavigate} from "react-router-dom"
 
+const baseURL = "https://course-evaluations-api.onrender.com"
+
 export default function Searchbar() {
     
     const navigate = useNavigate()
@@ -19,7 +21,7 @@ export default function Searchbar() {
     // fetching for course data
     useEffect(() => {
         const fetchCourses = async () => {
-            const response = await fetch("/api/courses")
+            const response = await fetch(baseURL + "/api/courses")
             const json = await response.json()
             
             console.log(response.ok)
