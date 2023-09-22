@@ -66,7 +66,7 @@ export default function Searchbar() {
             />
 
             {showDropdown && <div className="dropdown">
-                {filteredCourses.map(course => {
+                {filteredCourses ? filteredCourses.map(course => {
                     return (
                         <div className="search--box--course" key={course._id} onClick={() => {
                             setSearchInput("")
@@ -75,7 +75,8 @@ export default function Searchbar() {
                             <p>{course.title}</p>
                         </div>
                     )
-                })}
+                }) : 
+                <p>Courses are loading...</p>}
             </div>}
         </div>
         
