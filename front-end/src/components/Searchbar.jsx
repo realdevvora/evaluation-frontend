@@ -41,7 +41,9 @@ export default function Searchbar() {
     useEffect(() => {
         try {
             if (searchInput.length > 0 && courses) { // Check if 'courses' is not null
-                setFilteredCourses(courses.filter(course => course.title.toLowerCase().includes(searchInput.toLowerCase())))
+                if (courses.length > 0) {
+                    setFilteredCourses(courses.filter(course => course.title.toLowerCase().includes(searchInput.toLowerCase())))
+                }
             } else {
                 setFilteredCourses(courses)
                 setShowDropdown(false)
