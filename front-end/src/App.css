@@ -1,491 +1,482 @@
 /* Navbar */
 /* Navbar Container */
 .navbar {
-    background-color: #f8f9fa;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  /* Navbar Brand */
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-  }
+  background-color: #f8f9fa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .navbar-brand:hover {
-    color: #b37400;
-  }
-  
-  /* Searchbar */
-  .search--bar {
-    position: relative;
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  /* User Info and Logout */
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-info span {
-    margin-right: 10px;
-  }
-  
-  .user-info button {
-    border: none;
-    background-color: transparent;
-    color: antiquewhite;
-    cursor: pointer;
-  }
-  
-  .user-info button:hover {
-    text-decoration: underline;
-  }
-  
-  /* Authentication Buttons */
-  .authentication--buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .authentication--buttons button {
-    margin-left: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: antiquewhite;
-    color: black;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .authentication--buttons button:hover {
-    background-color: #b37400;
-  }
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-  .loggedin--buttons button {
-    margin-left: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: antiquewhite;
-    color: black;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .loggedin--buttons button:hover {
-    background-color: #b37400;
-  }
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #b37400;
+}
+
+/* Searchbar */
+.search--bar {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* User Info and Logout */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.user-info button {
+  border: none;
+  background-color: transparent;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  text-decoration: underline;
+}
+
+/* Authentication Buttons */
+.authentication--buttons {
+  display: flex;
+  align-items: center;
+}
+
+.authentication--buttons button {
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: antiquewhite;
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.authentication--buttons button:hover {
+  background-color: #b37400;
+}
+
+.loggedin--buttons button {
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: antiquewhite;
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loggedin--buttons button:hover {
+  background-color: #b37400;
+}
 
 /* Search Bar */
 .search--bar {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .search--box {
-    width: 500px;
-    height: 50px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
 }
 
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .search--box--course {
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .search--box--course:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 /* Home Hero */
 .home--hero {
-    color: antiquewhite;
-    border: 1px solid black;
-    background-image: url("./images/university_backdrop.jpeg");
-    background-size: 100% auto; /* Adjust the background size */
-    background-position: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20%;
-    padding-right: 80%;
+  color: antiquewhite;
+  border: 1px solid black;
+  background-image: url("./images/university_backdrop.jpeg");
+  background-size: 150% auto; /* Adjust the background size */
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 20%;
+  padding-right: 80%;
 }
 .home--hero h3 {
-    width: 100%;
+  width: 100%;
 }
 
 /* Home details */
 .home--page--course {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-  }
-  
-  /* Style for the course name */
-  .home--page--course h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for the review scores */
-  .home--review--scores {
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Style for individual review scores (e.g., rating and difficulty) */
-  .home--review--scores h4 {
-    padding: 10px;
-    font-size: 18px;
-    color: #666;
-  }
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+}
 
-  .home--review--example {
-    margin: 100px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .home--review--anecdote img {
-    width: 50%;
-  }
-  
-  .home--review--anecdote {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-  }
+/* Style for the course name */
+.home--page--course h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for individual review scores (e.g., rating and difficulty) */
+.home--review--scores h4 {
+  padding: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.home--review--example {
+  margin: 100px;
+  justify-content: space-between;
+}
+
+.home--review--anecdote img {
+  width: 50%;
+}
+
+.home--review--anecdote {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
 
 /* Form Container */
 .container-fluid form {
-    margin: 0;
-    display: flex;
-    align-self: center;
+  margin: 0;
+  display: flex;
+  align-self: center;
 }
 
 .form-outline {
-    width: 80%;
-    border-radius: 5px 5px 0 0;
+  width: 80%;
+  border-radius: 5px 5px 0 0;
 }
 
 /* Social Tags */
 .social-tags {
-    padding: 5px;
-    display: flex;
+  padding: 5px;
+  display: flex;
 }
 
 /* Footer */
 footer {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    padding: 10px;
-    width: 100%;
-    justify-content: center;
-    box-shadow: 0px 0px 10px rgb(200, 200, 200);
-    align-items: center;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgb(200, 200, 200);
+  align-items: center;
 }
 
 /* Review Form */
 .review--form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .create {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .create h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .create label {
-    font-weight: bold;
-    margin-top: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .create input {
-    margin: 5px 0;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
 }
 
 .create button {
-    background-color: antiquewhite;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .create button:hover {
-    background-color: #b37400;
+  background-color: #b37400;
 }
 
 .error {
-    color: red;
-    margin-top: 10px;
+  color: red;
+  margin-top: 10px;
 }
 
 /* Course Page */
 .course-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
 .details {
-    margin-top: 60px;
-    text-align: center;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .review--graphs {
-    display: flex;
+  display: flex;
 }
 
 .difficulty--graph,
 .rating--graph {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .difficulty--graph h4,
 .rating--graph h4 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Review Block */
 .review--block {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .search--box--review {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .search--box--review:hover {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .review--block--header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .review--block--header h3 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .review--block--header p {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 
 .review--block--ratings {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .review--block--ratings h4 {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
 .review--block strong {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
 }
 
 /* Login page */
 
 .login {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .login h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .login label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .login input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .login button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: antiquewhite;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .login button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .login button:hover {
-    background-color: #b37400;
-  }
-  
-  .error {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login button:hover {
+  background-color: #b37400;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* Register */
 
 .register {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .register h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .register label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .register input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .register button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: antiquewhite;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .register button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .register button:hover {
-    background-color: #b37400;
-  }
-  
-  .error {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
-  }  
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.register button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.register button:hover {
+  background-color: #b37400;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}  
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    .course-details {
-        margin: 10px;
-    }
+  .course-details {
+      margin: 10px;
+  }
 
-    .difficulty--graph,
-    .rating--graph {
-        margin: 10px 0;
-    }
+  .difficulty--graph,
+  .rating--graph {
+      margin: 10px 0;
+  }
 
-    .create input {
-        width: 100%;
-    }
+  .create input {
+      width: 100%;
+  }
 }

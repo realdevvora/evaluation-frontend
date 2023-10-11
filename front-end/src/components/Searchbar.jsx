@@ -76,7 +76,7 @@ export default function Searchbar() {
                         </div>
                     )
                 }) : 
-                <p>Courses are loading...</p>}
+                <p>Page is loading...</p>}
             </div>}
         </div>
         
