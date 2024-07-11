@@ -8,7 +8,8 @@ import Login from './components/navbarComponents/Login';
 import Register from './components/navbarComponents/Register';
 import Navbar from './components/Navbar';
 import { useAuthContext } from './hooks/useAuthContext';
-const baseURL = "https://course-evaluations-api.onrender.com"
+
+const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
 
 const App = () => {
   const [courses, setCourses] = useState(null);

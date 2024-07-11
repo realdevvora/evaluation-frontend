@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-const baseURL = "https://course-evaluations-api.onrender.com"
+const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
 
 const Home = () => {
     const [courses, setCourses] = useState(null)

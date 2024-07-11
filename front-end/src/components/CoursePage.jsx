@@ -5,7 +5,7 @@ import ReviewSection from './algorithmComponents/ReviewSection'
 import DifficultyBarChart from "./algorithmComponents/DifficultyBarChart"
 import RatingBarChart from "./algorithmComponents/RatingBarChart"
 import { useEffect } from 'react'
-const baseURL = "https://course-evaluations-api.onrender.com"
+const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
 
 
 export default function CoursePage(props) {

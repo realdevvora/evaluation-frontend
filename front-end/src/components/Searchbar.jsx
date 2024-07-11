@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import {useNavigate} from "react-router-dom"
 
-const baseURL = "https://course-evaluations-api.onrender.com"
+const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
 
 export default function Searchbar() {
     
