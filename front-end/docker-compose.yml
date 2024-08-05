@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+services:
+
+  app:
+    container_name: course-eval-frontend-c
+    image: course-eval-frontend-i
+    build: 
+      context: .
+    ports:
+      - 3000:80
+    env_file:
+    - .env
