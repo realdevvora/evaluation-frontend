@@ -8,7 +8,7 @@ import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
 
 // for production
-disableReactDevTools()
+// disableReactDevTools()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
