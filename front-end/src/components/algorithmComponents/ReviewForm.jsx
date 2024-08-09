@@ -16,7 +16,7 @@ const ReviewForm = (props) => {
     const [program, setProgram] = useState("Computer Science") // TODO
     const [rating, setRating] = useState(0)
     const [difficulty, setDifficulty] = useState(0)
-    const [courseTitle, setCourseTitle] = useState(course.title)
+    const [courseTitle, setCourseTitle] = useState()
     const [error, setError] = useState(null)
     
 
@@ -33,8 +33,9 @@ const ReviewForm = (props) => {
         console.log(user)
         setAuthor(user.username)
         setProgram(user.program)
-        
-        const review = {title, author: user.username, message, program: user.program, rating, difficulty, courseTitle}
+        setCourseTitle(course.title)
+
+        const review = {title, author: author, message, program: program, rating, difficulty, courseTitle}
 
         const response = await fetch(baseURL + '/api/reviews', {
             method: "POST",
