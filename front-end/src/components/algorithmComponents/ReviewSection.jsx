@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useReviewContext } from "../../hooks/useReviewContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
 const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
@@ -14,25 +14,19 @@ const ReviewSection = (props) => {
             const response = await fetch(baseURL + "/api/reviews")
             const json = await response.json()
 
-            
             const listReviews = []
             if (response.ok) {
                 for (const key in json) {
                     if (json[key].courseTitle === course.title) {
                         listReviews.push(json[key])
                     }
-                    
                 }
-
                 dispatch({type: "SET_REVIEWS", payload: listReviews})
             }
         }
-
         
         fetchReviews()
-    }, [course, user])
-
-
+    }, [course, user, dispatch])
 
     return (
         <div className="review--block">
