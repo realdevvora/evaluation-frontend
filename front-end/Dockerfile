@@ -14,6 +14,9 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/build .
 
+EXPOSE 3000:80
+
+
 # Start the Nginx server
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 

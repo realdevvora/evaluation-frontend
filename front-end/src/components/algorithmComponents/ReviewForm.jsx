@@ -2,8 +2,9 @@ import { useState } from "react"
 import { useReviewContext } from "../../hooks/useReviewContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
 
-const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
-console.log(baseURL)
+const baseURL = process.env.NODE_ENV === "development"
+  ? process.env.REACT_APP_LOCAL
+  : `${window.location.protocol}//${window.location.hostname}:${process.env.REACT_APP_PROD_PORT}`;
 
 const ReviewForm = (props) => {
     const { dispatch } = useReviewContext()

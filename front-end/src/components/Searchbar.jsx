@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from 'react'
 import {useNavigate} from "react-router-dom"
 
-const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
+const baseURL = process.env.NODE_ENV === "development"
+  ? process.env.REACT_APP_LOCAL
+  : `${window.location.protocol}//${window.location.hostname}:${process.env.REACT_APP_PROD_PORT}`;
 
 export default function Searchbar() {
     

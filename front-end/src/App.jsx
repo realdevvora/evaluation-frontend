@@ -9,7 +9,9 @@ import Register from './components/navbarComponents/Register';
 import Navbar from './components/Navbar';
 import { useAuthContext } from './hooks/useAuthContext';
 
-const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
+const baseURL = process.env.NODE_ENV === "development"
+  ? process.env.REACT_APP_LOCAL
+  : `${window.location.protocol}//${window.location.hostname}:${process.env.REACT_APP_PROD_PORT}`;
 
 const App = () => {
   const [courses, setCourses] = useState(null);
