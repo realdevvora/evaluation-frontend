@@ -26,7 +26,7 @@ const App = () => {
         
         setCourses(json);
       } catch (error) {
-        console.error('Error fetching courses:', error);
+        console.error('Error fetching courses:', error.message, error.name, error);
       }
     };
 

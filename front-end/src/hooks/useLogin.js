@@ -3,7 +3,7 @@ import { useAuthContext } from "./useAuthContext";
 
 const baseURL = process.env.NODE_ENV === "development"
   ? process.env.REACT_APP_LOCAL
-  : `${window.location.protocol}//${window.location.hostname}:${process.env.REACT_APP_PROD_PORT}`;
+  : process.env.REACT_APP_PROD;
 
 export const useLogin = () => {
     const [error, setError] = useState(null)

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 const baseURL = process.env.NODE_ENV === "development"
   ? process.env.REACT_APP_LOCAL
-  : `${window.location.protocol}//${window.location.hostname}:${process.env.REACT_APP_PROD_PORT}`;
+  : process.env.REACT_APP_PROD;
 
 const Home = () => {
     const [courses, setCourses] = useState(null)
