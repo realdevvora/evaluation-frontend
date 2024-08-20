@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import Footer from './Footer'
 import review_anecdotes from "../images/review_anecdotes.png"
 import MiniCourse from './homepage/MiniCourse'
 
