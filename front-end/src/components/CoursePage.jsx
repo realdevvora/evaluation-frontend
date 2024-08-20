@@ -5,7 +5,9 @@ import ReviewSection from './algorithmComponents/ReviewSection';
 import DifficultyBarChart from "./algorithmComponents/DifficultyBarChart";
 import RatingBarChart from "./algorithmComponents/RatingBarChart";
 
-const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
+const baseURL = process.env.NODE_ENV === "development"
+  ? process.env.REACT_APP_LOCAL
+  : process.env.REACT_APP_PROD;
 
 const initialDifficulties = [
   { label: 1, value: 0 },

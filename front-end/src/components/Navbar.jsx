@@ -28,8 +28,8 @@ export default function Navbar() {
                 )}
                 {!user && (
                     <div className="authentication--buttons">
-                        <button onClick={() => navigate('/login')}>Login</button>
-                        <button onClick={() => navigate('/register')}>Register</button>
+                        <button className="login--button" onClick={() => navigate('/login')}>Login</button>
+                        <button className="register--button" onClick={() => navigate('/register')}>Register</button>
                     </div>
                 )}
             </div>

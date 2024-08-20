@@ -132,32 +132,35 @@
 /* Home Hero */
 .home--hero {
   color: antiquewhite;
-  border: 1px solid black;
-  background-image: url("./images/university_backdrop.jpeg");
-  background-size: 150% auto; /* Adjust the background size */
+  background-image: url("./images/uoft.jpeg");
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 20%;
-  padding-right: 80%;
 }
 .home--hero h3 {
-  width: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 
 /* Home details */
 .home--page--course {
-  background-color: #488700ce;
+  background-color: black;
   color: white;
   padding: 20px;
   border: 1px solid;
   border-radius: 5px;
   margin: 20px;
-  transition: background-color 0.5s ease;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
 }
 
 .home--page--course:hover {
-  background-color: antiquewhite;
+  opacity: 75%;
   cursor: pointer;
 }
 
@@ -485,5 +488,9 @@ footer {
 
   .create input {
       width: 100%;
+  }
+
+  .authentication--buttons {
+    margin-top: 10px;
   }
 }

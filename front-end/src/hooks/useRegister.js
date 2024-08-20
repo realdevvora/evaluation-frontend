@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 
-const baseURL = process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL : process.env.REACT_APP_PROD;
+const baseURL = process.env.NODE_ENV === "development"
+  ? process.env.REACT_APP_LOCAL
+  : process.env.REACT_APP_PROD;
 
 export const useRegister = () => {
     const [error, setError] = useState(null)
